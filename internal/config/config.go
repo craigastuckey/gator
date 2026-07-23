@@ -12,7 +12,7 @@ type Config struct {
 	Current_user_name string
 }
 
-const configFileName = "gatorconfig.json"
+const configFileName = ".gatorconfig.json"
 
 func (c *Config) SetUser(username string) error {
 	if username == "" {
@@ -24,6 +24,7 @@ func (c *Config) SetUser(username string) error {
 	if err != nil {
 		return err
 	}
+
 	return nil
 }
 
